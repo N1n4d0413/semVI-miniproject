@@ -16,6 +16,10 @@ jobs:
     name: Build React App
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: ./semVI-miniproject
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -25,6 +29,7 @@ jobs:
         with:
           node-version: 20
           cache: npm
+          cache-dependency-path: ./semVI-miniproject/package-lock.json
 
       - name: Install dependencies
         run: npm ci
