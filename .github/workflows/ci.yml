@@ -18,7 +18,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: ./semVI-miniproject
+        working-directory: ./project-showcase
 
     steps:
       - name: Checkout repository
