@@ -11,7 +11,7 @@ import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/semVI-miniproject">
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/idea-1" element={<Idea1 />} />
